@@ -1,0 +1,29 @@
+{
+    "name": "cetera-labs/wevsite-skeleton",
+    "type": "project",
+    "description": "A skeleton to start a new CeteraCMS website",
+    "homepage": "https://ceteralabs.com/cetera-cms/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Romanov",
+            "email": "nicodim@mail.ru"
+        }
+    ],
+    "require": {
+	},
+	"minimum-stability": "dev",	
+    "repositories":[
+        {
+            "type":"package",
+            "package":{
+                "name":"cetera-labs/library",
+                "version":"10",
+                "dist":{
+                    "url":"https://cms.cetera.ru/lib.zip",
+                    "type":"zip"
+                }
+            }
+        }
+    ]	
+}
