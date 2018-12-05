@@ -11,8 +11,9 @@
         }
     ],
     "require": {
-	},
-	"minimum-stability": "dev",	
+		"cetera-labs/cetera-cms":"dev-master"
+     },
+    "minimum-stability": "dev",	
     "repositories":[
         {
             "type":"package",
