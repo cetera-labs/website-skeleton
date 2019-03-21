@@ -15,12 +15,12 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d [OR]
 RewriteCond %{REQUEST_URI} ^/$
 RewriteCond %{REQUEST_URI} !^/cms
-RewriteRule  ^.*$ vendor/cetera-labs/cetera-cms/cms/fo.php
+RewriteRule  ^.*$ cms/fo.php
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^/cms
-RewriteRule  ^(.*)$ vendor/cetera-labs/cetera-cms/$1
+RewriteRule  ^.*$ index.php
 
 RewriteCond %{REQUEST_URI} ^/plugins/(.+)\.php$ [OR]
 RewriteCond %{REQUEST_URI} ^/themes/(.+)\.php$
