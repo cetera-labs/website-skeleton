@@ -12,15 +12,15 @@ AddDefaultCharset Off
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/cms
+RewriteRule  ^.*$ index.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d [OR]
 RewriteCond %{REQUEST_URI} ^/$
 RewriteCond %{REQUEST_URI} !^/cms
 RewriteRule  ^.*$ cms/fo.php
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} ^/cms
-RewriteRule  ^.*$ index.php
 
 RewriteCond %{REQUEST_URI} ^/plugins/(.+)\.php$ [OR]
 RewriteCond %{REQUEST_URI} ^/themes/(.+)\.php$
