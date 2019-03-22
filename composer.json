@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-		"cetera-labs/cetera-cms":"dev-master"
+        "cetera-labs/cetera-cms":"dev-master",
+        "phing/phing": "2.*"
      },
     "minimum-stability": "dev",	
     "repositories":[
@@ -26,5 +27,11 @@
                 }
             }
         }
-    ]	
+    ],
+    
+    "scripts": {
+        "post-update-cmd": [
+            "phing"
+        ]
+    }    
 }
