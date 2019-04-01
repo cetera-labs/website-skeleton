@@ -9,6 +9,7 @@
             "name": "Roman Romanov",
             "email": "nicodim@mail.ru"
         }
+        
     ],
     "require": {
         "cetera-labs/cetera-cms":"dev-master"
@@ -26,6 +27,12 @@
                 }
             }
         }
-    ]
+    ],
+    
+    "scripts": {
+        "post-update-cmd": [
+            "phing -find vendor/cetera-labs/cetera-cms/build.xml"
+        ]
+    }    
     
 }
